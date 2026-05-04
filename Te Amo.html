@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Lucía ☀️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;900&family=Shadows+Into+Light&display=swap');
+
+        :root {
+            --amarillo: #FFD700;
+            --celeste: #00BFFF;
+            --fondo: #E0F4FF; 
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            background-color: var(--fondo);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed; top: 20px; left: 50%; 
+            transform: translateX(-50%);
+            width: auto; 
+            background: rgba(255, 255, 255, 0.98);
+            padding: 12px 25px; z-index: 1000;
+            border-radius: 50px;
+            border: 2.5px solid var(--amarillo);
+            display: flex; justify-content: center; gap: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #333; text-decoration: none;
+            font-weight: 900; font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            padding: 110px 20px 80px 20px;
+        }
+
+        .music-player {
+            width: 100%; max-width: 500px;
+            margin-bottom: 25px;
+            border: none !important;
+        }
+
+        h1 { 
+            font-family: 'Dancing Script', cursive; 
+            font-size: clamp(3.5rem, 10vw, 6rem); 
+            color: var(--amarillo); 
+            text-shadow: 3px 3px 0px var(--celeste);
+            margin: 0 0 20px 0;
+        }
+
+        .carta {
+            width: 95%; max-width: 600px;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 1.7rem;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            border: 4px solid var(--amarillo);
+            box-shadow: 10px 10px 0px rgba(0, 191, 255, 0.2);
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900; font-size: 2.2rem;
+            color: var(--celeste);
+            border-bottom: 5px solid var(--amarillo);
+            margin-bottom: 50px;
+            display: inline-block;
+        }
+
+        .collage {
+            display: flex; flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 25px; width: 100%;
+        }
+
+        .foto-box {
+            background: white; padding: 10px 10px 45px 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            width: 300px;
+        }
+
+        .foto-box img {
+            width: 100%; height: 320px;
+            object-fit: contain; background: #fafafa;
+        }
+
+        .etiqueta {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem; margin-top: 12px; color: #444;
+        }
+
+        .contenedor-vales {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .btn-vale {
+            cursor: pointer; 
+            background: var(--amarillo); 
+            padding: 20px 15px; 
+            border-radius: 15px; 
+            font-weight: 900; 
+            box-shadow: 0 6px 0px #d4b500; 
+            transition: 0.1s;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+        .btn-vale:active { transform: translateY(4px); box-shadow: 0 2px 0px #d4b500; }
+        
+        /* Estilos específicos para las fotos flotantes del inicio */
+        .foto-flotante {
+            position: absolute;
+            width: 150px;
+            z-index: 1;
+            transition: 0.3s;
+        }
+        .foto-flotante:hover { transform: scale(1.1) rotate(0deg) !important; z-index: 20; }
+        
+        @media (max-width: 1000px) {
+            .foto-flotante { display: none; } /* Se ocultan en celular para que no tapen el texto */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio">Mi Lugar Seguro</a>
+        <a href="#recuerdos">Adventure Book</a>
+        <a href="#nosotros">Us</a>
+        <a href="#historia">Nuestra Historia</a>
+    </nav>
+
+    <section id="inicio" style="position: relative;">
+        
+        <!-- FOTOS COSTADO IZQUIERDO -->
+        <div class="foto-box foto-flotante" style="left: 2%; top: 150px; transform: rotate(-12deg);">
+            <img src="lu1.jpg" style="height: 150px;"><div class="etiqueta" style="font-size: 1rem;">✨</div>
+        </div>
+        <div class="foto-box foto-flotante" style="left: 5%; top: 400px; transform: rotate(8deg);">
+            <img src="lu3.JPG" style="height: 150px;"><div class="etiqueta" style="font-size: 1rem;">💖</div>
+        </div>
+        <div class="foto-box foto-flotante" style="left: 3%; top: 650px; transform: rotate(-5deg);">
+            <img src="lu5.jpg" style="height: 150px;"><div class="etiqueta" style="font-size: 1rem;">🌸</div>
+        </div>
+
+        <!-- FOTOS COSTADO DERECHO -->
+        <div class="foto-box foto-flotante" style="right: 2%; top: 150px; transform: rotate(10deg);">
+            <img src="lu2.jpg" style="height: 150px;"><div class="etiqueta" style="font-size: 1rem;">☀️</div>
+        </div>
+        <div class="foto-box foto-flotante" style="right: 5%; top: 400px; transform: rotate(-7deg);">
+            <img src="lu4.JPG" style="height: 150px;"><div class="etiqueta" style="font-size: 1rem;">🔥</div>
+        </div>
+        <div class="foto-box foto-flotante" style="right: 3%; top: 650px; transform: rotate(12deg);">
+            <img src="lu6.jpg" style="height: 150px;"><div class="etiqueta" style="font-size: 1rem;">👑</div>
+        </div>
+
+        <div style="position: relative; z-index: 10;">
+            <div class="music-player">
+                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VtDqsyBXBICZy03Vo6Q1T?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <h1>Para Lucía</h1>
+
+            <div class="carta">
+                Lucía Victoria Ferrero Rocher sos, sin dudas, lo mejor que me pasó. En medio de tanto ruido y en este mundo que a veces va demasiado rápido, encontrarte fue como llegar a casa. Sos mi lugar seguro, un rincón de paz donde todo está bien y puedo ser yo mismo sin miedo.
+                <br><br>
+                Gracias por elegirme cada mañana, cada tarde y cada noche, gracias por elegirme cada hora, cada minuto, cada segundo porque dios como lo vale. Por compartir tu camino conmigo y por hacerme ver que la vida es mucho más linda si la caminamos juntos. No es solo lo que somos hoy, es todo lo que imagino con vos. Sos mi sol, mi paz y mi aventura favorita. Te amo muchísimo. ❤️‍🔥💖❤️‍🔥
+                <br><br>
+                PD: Vos podes con esos examenes, te va a ir super bien 💪. 
+            </div>
+        </div>
+    </section>
+
+    <section id="recuerdos">
+        <h2>Our Path</h2>
+        <div class="collage">
+            <div class="foto-box"><img src="recuerdo1.jpg"><div class="etiqueta">Primer gran cita <3</div></div>
+            <div class="foto-box"><img src="recuerdo2.jpg"><div class="etiqueta">La Sorpresa Salio Bien</div></div>
+            <div class="foto-box"><img src="recuerdo3.jpg"><div class="etiqueta">El Mejor Recibimiento</div></div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Us Always</h2>
+        <div class="collage">
+            <div class="foto-box"><img src="nosotros1.jpg"><div class="etiqueta">Como No Amarte</div></div>
+            <div class="foto-box"><img src="nosotros2.jpg"><div class="etiqueta">Iconicos</div></div>
+            <div class="foto-box"><img src="nosotros3.JPG"><div class="etiqueta">Te amo muchisimo</div></div>
+        </div>
+    </section>
+
+    <section id="historia">
+        <h2>Nuestra Historia</h2>
+        <div class="carta" style="text-align: left; font-size: 1.5rem;">
+            🇱🇷 <b>04/08/25:</b> El día que el destino se puso de nuestro lado.<br><br>
+            🎳 <b>20/08/25:</b> Nuestra primera cita, dios que linda estabas.<br><br>
+            💌 <b>04/12/25:</b> El dia que decidi que ibas a ser mia.<br><br>
+            ❤️‍🩹 <b>04/05/26:</b> Avanzando con tal de amarnos para siempre.
+        </div>
+
+        <div class="contenedor-vales">
+            <div class="btn-vale" onclick="alert('✨ VALE Por una escapada al shoping a ver ropa para vos bombona ✨')">
+                🎫 CANJEAR VALE 1
+            </div>
+            
+            <div class="btn-vale" onclick="alert('✨ VALE Por Noche de peliculas que VOS elijas ✨')">
+                🎫 CANJEAR VALE 2
+            </div>
+            
+            <div class="btn-vale" onclick="alert('✨ VALE Por que te haga lo que vos quieras ​​😘​ ✨')">
+                🎫 CANJEAR VALE 3
+            </div>
+
+            <div class="btn-vale" onclick="alert('✨ VALE Por una visita expres en tu epoca estudiosa ✨')">
+                🎫 CANJEAR VALE 4
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
